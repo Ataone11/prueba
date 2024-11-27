@@ -1,0 +1,40 @@
+<a [routerLink]="['/user', product().id]">
+  <div
+    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+  >
+    
+    <div class="p-5">
+      
+        <h5
+          class="mb-3  font-normaltracking-tight text-gray-900 dark:text-white line-clamp-1"
+        >
+         Nombre: {{ product().name }}
+        </h5>
+      
+      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 line-clamp-3">
+        Usuario:{{ product().username }}
+      </p>
+     
+      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 line-clamp-3">
+        Email:{{ product().email }}
+      </p>
+      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 line-clamp-3">
+        Ciudad:{{ product().address.city }}
+      </p>
+      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 line-clamp-3">
+        Calle:{{ product().address.street }}
+      </p>
+      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 line-clamp-3">
+        Telefono:{{ product().phone }}
+      </p>
+      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 line-clamp-3">
+        sitioWeb{{ product().website }}
+      </p>
+      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 line-clamp-3">
+        Empresa{{ product().company.name }}
+      </p>
+      
+    </div>
+  </div>
+
+</a>
